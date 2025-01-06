@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+        
+    <wb-module deploy-name="admin">
+                
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+                
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+                
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+                
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources/uat"/>
+                
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources/live"/>
+                
+        <dependent-module archiveName="APPLEWEAR_Util-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/applewear_util/applewear_util">
+                        
+            <dependency-type>uses</dependency-type>
+                    
+        </dependent-module>
+                
+        <dependent-module archiveName="APPLEWEAR_Entity-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/applewear_entity/applewear_entity">
+                        
+            <dependency-type>uses</dependency-type>
+                    
+        </dependent-module>
+                
+        <dependent-module archiveName="APPLEWEAR_Dto-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/applewear_dto/applewear_dto">
+                        
+            <dependency-type>uses</dependency-type>
+                    
+        </dependent-module>
+                
+        <dependent-module archiveName="APPLEWEAR_Dao-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/applewear_dao/applewear_dao">
+                        
+            <dependency-type>uses</dependency-type>
+                    
+        </dependent-module>
+                
+        <dependent-module archiveName="APPLEWEAR_Service-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/applewear_service/applewear_service">
+                        
+            <dependency-type>uses</dependency-type>
+                    
+        </dependent-module>
+                
+        <property name="java-output-path" value="/applewear_admin/target/classes"/>
+        <property name="context-root" value="admin"/>
+            
+    </wb-module>
+    
+</project-modules>

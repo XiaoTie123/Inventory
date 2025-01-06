@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.applewear.crm</groupId>
+		<artifactId>APPLEWEAR_Parent</artifactId>
+		<version>1.0</version>
+		<relativePath>../applewear_parent</relativePath>
+	</parent>
+	<packaging>war</packaging>
+	<artifactId>APPLEWEAR_Admin</artifactId>
+	<description>Admin project for Apple Wear CRM</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.applewear.crm</groupId>
+			<artifactId>APPLEWEAR_Util</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.applewear.crm</groupId>
+			<artifactId>APPLEWEAR_Entity</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.applewear.crm</groupId>
+			<artifactId>APPLEWEAR_Dto</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.applewear.crm</groupId>
+			<artifactId>APPLEWEAR_Dao</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.applewear.crm</groupId>
+			<artifactId>APPLEWEAR_Service</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>${admin.war.file.name}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<configuration>
+					<ignoreNonCompile>true</ignoreNonCompile>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.1</version>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

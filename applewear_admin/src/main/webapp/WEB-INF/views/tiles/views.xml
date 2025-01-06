@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<!-- Login Layout -->
+	<definition name="login-layout"
+		template="/WEB-INF/views/tiles/layouts/login-layout.jsp">
+		<put-attribute name="head"
+			value="/WEB-INF/views/tiles/template/head-tag.jsp" />
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="" />
+	</definition>
+
+	<!-- Main Layout -->
+	<definition name="main-layout"
+		template="/WEB-INF/views/tiles/layouts/main-template.jsp">
+		<put-attribute name="head"
+			value="/WEB-INF/views/tiles/template/head-tag.jsp" />
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/tiles/template/header.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/template/menu.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+
+
+	<definition name="invoice-layout"
+		template="/WEB-INF/views/tiles/layouts/invoice-layout.jsp">
+		<put-attribute name="head"
+			value="/WEB-INF/views/tiles/template/head-tag.jsp" />
+		<put-attribute name="title" value="Invoice" />
+		<put-attribute name="body" value="" />
+	</definition>
+
+	<definition name="login" extends="login-layout">
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/login/login.jsp" />
+	</definition>
+
+	<definition name="home" extends="main-layout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/home/home.jsp" />
+	</definition>
+
+	<!-- Product -->
+	<definition name="product-setup" extends="main-layout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/product/product-setup.jsp" />
+	</definition>
+	<definition name="list" extends="main-layout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/product/list.jsp" />
+	</definition>
+
+
+	<definition name="customer-setup" extends="main-layout">
+		<put-attribute name="title" value="Customer Setup" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/customer/customer-setup.jsp" />
+	</definition>
+
+	<definition name="customer-search" extends="main-layout">
+		<put-attribute name="title" value="Customer Search" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/customer/customer-search.jsp" />
+	</definition>
+
+	<definition name="rank-setup" extends="main-layout">
+		<put-attribute name="title" value="Rank Setup" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/rank/rank-setup.jsp" />
+	</definition>
+
+	<definition name="payment_method_setup"
+		extends="main-layout">
+		<put-attribute name="title" value="Rank Setup" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/payment_method/payment_method_setup.jsp" />
+	</definition>
+
+
+	<definition name="order-search" extends="main-layout">
+		<put-attribute name="title" value="Order Search" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/order/order-search.jsp" />
+	</definition>
+
+	<definition name="order-finish-search" extends="main-layout">
+		<put-attribute name="title" value="Order Finish Search" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/order/order-finish-search.jsp" />
+	</definition>
+
+
+	<definition name="brand-setup" extends="main-layout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/brand/brand-setup.jsp" />
+	</definition>
+
+	<definition name="category-setup" extends="main-layout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/category/category-setup.jsp" />
+	</definition>
+
+	<definition name="size-setup" extends="main-layout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/size/size-setup.jsp" />
+	</definition>
+
+	<definition name="sale-monthly-report" extends="main-layout">
+		<put-attribute name="title" value="Sale Monthly Report" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/report/sale-monthly-report.jsp" />
+	</definition>
+
+	<definition name="sale-yearly-report" extends="main-layout">
+		<put-attribute name="title" value="Sale Yearly Report" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/report/sale-yearly-report.jsp" />
+	</definition>
+
+	<definition name="sale-daily-report" extends="main-layout">
+		<put-attribute name="title" value="Sale Daily Report" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/report/sale-daily-report.jsp" />
+	</definition>
+
+	<definition name="customer-history" extends="main-layout">
+		<put-attribute name="title" value="Customer History" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/customer/customer-history.jsp" />
+	</definition>
+
+	<definition name="customer-order-list" extends="main-layout">
+		<put-attribute name="title" value="Customer Order List" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/order/customer-order-list.jsp" />
+	</definition>
+
+	<definition name="customer-order-history"
+		extends="main-layout">
+		<put-attribute name="title"
+			value="Customer Order History" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/order/customer-order-history.jsp" />
+	</definition>
+
+	<definition name="customer-payment-setup"
+		extends="main-layout">
+		<put-attribute name="title" value="Customer Payment" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/payment/customer-payment-setup.jsp" />
+	</definition>
+
+
+	<definition name="order-setup" extends="main-layout">
+		<put-attribute name="title" value="Order Setup" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/order/order-setup.jsp" />
+	</definition>
+	<!-- Product -->
+	<definition name="admin-list" extends="main-layout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/admin/admin-list.jsp" />
+	</definition>
+
+	<definition name="admin-setup" extends="main-layout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/admin/admin-setup.jsp" />
+
+	</definition>
+
+	<definition name="inventory" extends="main-layout">
+		<put-attribute name="title" value="Inventory" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/inventory/inventory.jsp" />
+
+	</definition>
+
+	<definition name="invoice" extends="invoice-layout">
+		<put-attribute name="title" value="Invoice" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/invoice/invoice.jsp" />
+
+	</definition>
+
+	<definition name="customer_invoice" extends="invoice-layout">
+		<put-attribute name="title" value="Customer Invoice" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/invoice/customer_invoice.jsp" />
+
+	</definition>
+
+	<definition name="payment_invoice" extends="invoice-layout">
+		<put-attribute name="title" value="Payment Invoice" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/invoice/payment_invoice.jsp" />
+
+	</definition>
+
+	<definition name="stock-transaction-setup"
+		extends="main-layout">
+		<put-attribute name="title" value="Stock Transaction" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/stock-transaction/stock-transaction-setup.jsp" />
+
+	</definition>
+
+	<definition name="stock-transaction-search"
+		extends="main-layout">
+		<put-attribute name="title"
+			value="Stock Transaction Search" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/stock-transaction/stock-transaction-search.jsp" />
+
+	</definition>
+
+</tiles-definitions>
